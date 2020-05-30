@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block style %}"bill.css"{% endblock %}
+{% block content %}
+	<h1>Well done! Here is your bill.</h1>
+	<h2>You can download it if wanted!</h2>
+	<div>
+		<table>
+			<tr class="Bande_article_unitaire">
+				<td>{{FStarter}}</td>
+				<td>{{FStarterPrice}}</td>
+			</tr>
+			<tr class="Bande_article_unitaire">
+				<td>{{FMain}}</td>
+				<td>{{FMainPrice}}</td>
+			</tr>
+			<tr class="Bande_article_unitaire">
+				<td>{{FCheese}}</td>
+				<td>{{FCheesePrice}}</td>
+			</tr>
+			<tr class="Bande_article_unitaire">
+				<td>{{FDessert}}</td>
+				<td>{{FDessertPrice}}</td>
+			</tr>
+			<tr class="Bande_article_unitaire">
+				<td>Total:</td>
+				<td>{{TotalPrice}}</td>
+			</tr>
+
+		</table>
+	</div>
+{% endblock %}

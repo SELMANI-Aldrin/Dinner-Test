@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block style %}"style.css"{% endblock %}
+{% block Sstyle %}<link rel="stylesheet" type="text/css" href= {{Which_Dessert}}>{% endblock %}
+{% block content %}
+	<h1>Last but not least: The Dessert!</h1>
+	<form>
+		<input type="radio" id= "Citron" name="Dessert" value="Citron" 
+		checked>
+		<label for="Citron">Tarte aux citrons meringuée 8.50</label>
+
+		<input type="radio" id= "Coupe" name="Dessert" value="Coupe" 
+		>
+		<label for="Coupe">Coupe de glace gourmande 6.50</label>
+
+		<input type="radio" id= "Eclairs" name="Dessert" value="Eclairs" 
+		>
+		<label for="Eclairs">Eclairs maison(3) 5.00</label>
+
+		<input type="radio" id= "Tiramisu" name="Dessert" value="Tiramisu" 
+		>
+		<label for="Tiramisu">Tiramisu 6.00</label>
+		<br>
+		<button type="submit">Select</button>
+	</form>
+	<!-- the href may not work -->
+	<a href="/Bill"> Finish </a>
+{% endblock %}

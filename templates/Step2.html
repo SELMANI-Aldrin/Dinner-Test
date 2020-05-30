@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block style %}"style.css"{% endblock %}
+{% block Sstyle %}<link rel="stylesheet" type="text/css" href= {{Which_Main}}>{% endblock %}
+{% block content %}
+	<h1>What about the Main?</h1>
+	<form>
+		<input type="radio" id= "Pizza" name="Main" value="Pizza" 
+		checked>
+		<label for="Pizza">Pizza classique 8.50</label>
+
+		<input type="radio" id= "Sushi" name="Main" value="Sushi" 
+		>
+		<label for="Sushi">Plateau de Sushi frais 9.00</label>
+
+		<input type="radio" id= "Poisson" name="Main" value="Poisson" 
+		>
+		<label for="Poisson">Poisson frais 8.00</label>
+
+		<input type="radio" id= "Sphagetti" name="Main" value="Spaghetti" 
+		>
+		<label for="Spaghetti">Sphagetti avec boulettes 7.00</label>
+		<br>
+		<button type="submit">Select</button>
+	</form>
+	<!-- the href may not work -->
+	<a href="/Step3"> Next </a>
+{% endblock %}

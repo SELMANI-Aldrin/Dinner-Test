@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+{% block style %}"style.css"{% endblock %}
+{% block body %}
+	<h1>Welcome to the online menu!</h1>
+	<h2>What's your name?</h2>
+	<form action="{{url_for('SetName')}}">
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" name="username" id="name" value="HungryMan">
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+{% endblock %}

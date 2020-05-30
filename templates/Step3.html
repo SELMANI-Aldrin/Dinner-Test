@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block style %}"style.css"{% endblock %}
+{% block Sstyle %}<link rel="stylesheet" type="text/css" href= {{Which_Cheese}}>{% endblock %}
+{% block content %}
+	<h1>Do you like Cheese?</h1>
+	<form>
+		<input type="radio" id= "Brie" name="Cheese" value="Brie" 
+		checked>
+		<label for="Brie">Brie maison 5.00</label>
+
+		<input type="radio" id= "Gouda" name="Cheese" value="Gouda" 
+		>
+		<label for="Gouda">Gouda maison 3.50</label>
+
+		<input type="radio" id= "Camenbert" name="Cheese" value="Camenbert" 
+		>
+		<label for="Camenbert">Camenbert maison 3.00</label>
+
+		<input type="radio" id= "Riccota" name="Cheese" value="Riccota" 
+		>
+		<label for="Riccota">Riccota maison 4.50</label>
+		<br>
+		<button type="submit">Select</button>
+	</form>
+	<!-- the href may not work -->
+	<a href="/Step4"> Next </a>
+{% endblock %}
